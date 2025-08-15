@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Darila Official — Sunscreen & Fiber</title>
+<!-- jol mer ey???????????????????????????????? HAHHHHHHHHHHHHHH???? -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gidugu&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Koulen&family=League+Gothic&family=Lilita+One&family=Modak&family=Oswald:wght@200..700&family=Smythe&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="home">
+  <nav class="nav" role="navigation" aria-label="Primary">
+    <div class="nav-inner">
+      <a class="brand" href="#home">Darila Official</a>
+      <div class="cart" aria-hidden="false">
+        <button id="cart-button" class="cart-btn" aria-label="Open cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 18a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm10 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM6.5 6h13l-1 6H8.5L6.5 6z"/></svg>
+          <span id="cart-quantity" class="cart-quantity" aria-live="polite">0</span>
+        </button>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">☰</button>
+      <ul id="site-nav" class="nav-links" role="menu" aria-hidden="true">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li class="nav-controls">
+          <label for="lang-switcher" class="sr-only">Language</label>
+          <select id="lang-switcher" aria-label="Language switcher">
+            <option value="en">English</option>
+            <option value="kh">ភាសាខ្មែរ</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header class="hero" aria-roledescription="carousel">
+    <div class="slides" aria-live="polite">
+      <figure class="slide show" data-caption="Protect &amp; Glow — Sunscreen">
+        <img src="12.jpg" alt="Protect & Glow — Sunscreen" loading="eager" decoding="async" width="1600" height="889" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" />
+        <figcaption><strong>Protect &amp; Glow</strong><br><span>SPF you can trust</span></figcaption>
+      </figure>
+
+      <figure class="slide" data-caption="Soft &amp; Strong — Fiber">
+        <img src="1234.jpg" alt="Soft & Strong — Fiber" loading="lazy" decoding="async" width="1600" height="889" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" />
+        <figcaption><strong>Soft &amp; Strong</strong><br><span>Daily fiber care</span></figcaption>
+      </figure>
+
+      <figure class="slide" data-caption="New Arrival">
+        <img src="123.jpg" alt="New Arrival" loading="lazy" decoding="async" width="1600" height="889" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" />
+        <figcaption><strong>New Arrival</strong><br><span>Limited edition combo pack</span></figcaption>
+      </figure>
+      <div class="dots" role="tablist" aria-label="Slide indicators"></div>
+    </div>
+  </header>
+  <main>
+    <section id="products" class="reveal">
+      <h2>Products</h2>
+      <div class="products-grid">
+        <article class="product-card" data-id="sun1" data-title="Sunscreen A" data-price="4.8">
+          <div class="img-wrap">
+            <img loading="lazy" decoding="async" src="sunscreen123.jpg" alt="Sunscreen A" width="800" height="800" />
+          </div>
+          <h3 class="product-title">Darila Sunscreen</h3>
+          <div class="price">$4.80</div>
+          <button class="cta add-only" data-id="sun1" type="button">Add to Cart</button>
+        </article>
+        <article class="product-card" data-id="fiber1" data-title="Fiber A" data-price="14">
+          <div class="img-wrap">
+            <img loading="lazy" decoding="async" src="2,soft opening copy.png" alt="Fiber A" width="800" height="800" />
+          </div>
+          <h3 class="product-title">Darila Fiber</h3>
+          <div class="price">$14.00</div>
+          <button class="cta add-and-gos" data-id="fiber1" type="button">Add to Cart</button>
+        </article>
+        <article class="product-card placeholder" aria-hidden="true">
+           <img loading="lazy" decoding="async" src="comingsoon.png" alt="Coming soon" width="800" height="800" />
+          <div class="product-wrap"><div class="placeholder-inner"></div></div>
+          <h3 class="product-title">???</h3>
+          <div class="price"></div>
+          <div class="cta disabled" aria-hidden="true">Coming soon</div>
+        </article>
+
+        <article class="product-card placeholder" aria-hidden="true">
+           <img loading="lazy" decoding="async" src="comingsoon.png" alt="Coming soon" width="800" height="800" />
+          <div class="product-wrap"><div class="placeholder-inner"></div></div>
+          <h3 class="product-title">???</h3>
+          <div class="price"></div>
+          <div class="cta disabled" aria-hidden="true">Coming soon</div>
+        </article>
+      </div>
+    </section>
+    <section id="reviews" aria-label="Customer reviews carousel" class="reviews-section">
+      <h3 class="reviewtext">Review From Customer</h3>
+      <div class="reviews-viewport" tabindex="0" aria-live="off">
+        <div class="reviews-track" data-duplicated="false">
+          <div class="review-card"><img src="feed.png" alt="Review 1" width="800" height="800" loading="lazy" decoding="async"></div>
+          <div class="review-card"><img src="feed2.jpg" alt="Review 2" width="800" height="800" loading="lazy" decoding="async"></div>
+          <div class="review-card"><img src="feed3.png" alt="Review 3" width="800" height="800" loading="lazy" decoding="async"></div>
+          <div class="review-card"><img src="feed4.png" alt="Review 4" width="800" height="800" loading="lazy" decoding="async"></div>
+          <div class="review-card"><img src="feed5.png" alt="Review 5" width="800" height="800" loading="lazy" decoding="async"></div>
+          <div class="review-card"><img src="feed6.jpg" alt="Review 6" width="800" height="800" loading="lazy" decoding="async"></div>
+        </div>
+      </div>
+    </section>
+<h3 class="model-heading">Model</h3> 
+ <section class="model-background" aria-hidden="true">
+  <div class="model-img"><img src="feed.png" alt=""></div>
+  <div class="model-img"><img src="feed2.png" alt=""></div>
+   <div class="model-img"><img src="feed3.png" alt=""></div>
+   <div class="model-img"><img src="feed4.png" alt=""></div>
+   <div class="model-img"><img src="feed5.png" alt=""></div>
+   <div class="model-img"><img src="feed6.jpg" alt=""></div>
+ </section>
+    <section id="contact" class="reveal">
+      <h2>Contact</h2>
+      <p class="contact-info">Tel: 012 666 999 — Telegram</p>
+    </section>
+  </main>
+  <footer>
+    <div class="foot-wrap">
+      <p>Phone Number: 012 333 999</p>
+      <p>&copy; 2025 Darila Official</p>
+    </div>
+  </footer>
+  <aside id="mini-cart" class="mini-cart" role="dialog" aria-label="Shopping cart" aria-hidden="true">
+    <header class="mini-cart-header">
+      <strong>Your Cart</strong>
+      <button id="mini-cart-close" class="mini-close" aria-label="Close">✕</button>
+    </header>
+    <div id="mini-cart-list" class="mini-cart-list" tabindex="0">
+      <div class="empty">Your Cart is empty</div>
+    </div>
+    <footer class="mini-cart-footer">
+      <div class="subtotal"><span>Subtotal</span><strong id="mini-cart-sub">$0.00</strong></div>
+      <div class="actions">
+        <a href="cart.html" class="btn">Check Out</a>
+      </div>
+    </footer>
+  </aside>
+  <div id="mini-overlay" class="mini-overlay" aria-hidden="true"></div>
+  <button id="floating-cart" class="floating-cart" aria-label="Open cart">
+    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 18a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm10 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM6.5 6h13l-1 6H8.5L6.5 6z"/></svg>
+    <span id="floating-cart-qty" class="floating-qty" aria-live="polite">0</span>
+  </button>
+  <script src="script.js" defer></script>
+</body>
+</html>
